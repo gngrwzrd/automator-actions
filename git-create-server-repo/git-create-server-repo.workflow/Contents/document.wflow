@@ -18,6 +18,110 @@
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>fileNames</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Get Specified Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>fileNames</key>
+					<array>
+						<string>~/Desktop</string>
+					</array>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SpecifiedFiles</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>SpecifiedFilesAction</string>
+				<key>InputUUID</key>
+				<string>D0149A7F-4014-454A-891C-D5649266188C</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Choose</string>
+					<string>Find</string>
+					<string>Get</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>6B79E856-CD54-40BF-AA67-03F6D1ABA4AA</string>
+				<key>UUID</key>
+				<string>D2C211C8-8555-4695-861C-BA51A84E023A</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>fileNames</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>429.000000:1001.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
 					<false/>
 					<key>Types</key>
 					<array>
@@ -108,12 +212,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>671.000000:804.000000</string>
+				<string>429.000000:763.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -289,12 +391,10 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>671.000000:699.000000</string>
+				<string>429.000000:658.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -401,12 +501,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>671.000000:517.000000</string>
+				<string>429.000000:476.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -465,10 +563,13 @@
 					<string>NAME=$1
 FOLDER=$2
 cd $FOLDER
-mkdir $NAME
+mkdir -p $NAME
 cd $NAME
+echo $PATH
+PATH=$PATH:/usr/local/bin
 git init --bare
-git update-server-info</string>
+git update-server-info
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -578,12 +679,10 @@ git update-server-info</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>671.000000:414.000000</string>
+				<string>429.000000:373.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -593,26 +692,33 @@ git update-server-info</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>137FAE75-D334-4BB9-A018-E5575F328921</key>
-		<dict>
-			<key>from</key>
-			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
-			<key>to</key>
-			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
-		</dict>
-		<key>5F1AA7BD-A4D9-4455-A299-E28D8C0873EE</key>
+		<key>06419E00-6EFB-4C3D-8B23-6CABADD7EF35</key>
 		<dict>
 			<key>from</key>
 			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
 			<key>to</key>
 			<string>B84BCBB0-3005-414C-9F2C-014242D3E98C - B84BCBB0-3005-414C-9F2C-014242D3E98C</string>
 		</dict>
-		<key>F6ED210C-F0AF-4950-BC34-109A9CD9C224</key>
+		<key>407599FD-E4EC-4ABB-9A27-31B34B35FCA4</key>
+		<dict>
+			<key>from</key>
+			<string>D2C211C8-8555-4695-861C-BA51A84E023A - D2C211C8-8555-4695-861C-BA51A84E023A</string>
+			<key>to</key>
+			<string>453709FA-80CE-4B43-BB14-F4CAAE9CBC60 - 453709FA-80CE-4B43-BB14-F4CAAE9CBC60</string>
+		</dict>
+		<key>5EF70C7A-1DCB-4809-A1F5-6FE5ABCB0181</key>
 		<dict>
 			<key>from</key>
 			<string>453709FA-80CE-4B43-BB14-F4CAAE9CBC60 - 453709FA-80CE-4B43-BB14-F4CAAE9CBC60</string>
 			<key>to</key>
 			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
+		</dict>
+		<key>722D7A9E-9F25-4464-8764-2BBA44286013</key>
+		<dict>
+			<key>from</key>
+			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
+			<key>to</key>
+			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
 		</dict>
 	</dict>
 	<key>variables</key>
