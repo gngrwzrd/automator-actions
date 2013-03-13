@@ -111,7 +111,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>357.000000:684.000000</string>
+				<string>671.000000:804.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -154,7 +154,7 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>What should I name the repo?</string>
+							<string>What should I name the repo? (Example: awesome-objc.git)</string>
 						</array>
 					</dict>
 					<key>requireInput</key>
@@ -182,7 +182,7 @@
 					<key>defaultAnswer</key>
 					<string></string>
 					<key>defaultMessage</key>
-					<string>What should I name the repo?</string>
+					<string>What should I name the repo? (Example: awesome-objc.git)</string>
 					<key>requireInput</key>
 					<true/>
 				</dict>
@@ -290,7 +290,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>357.000000:579.000000</string>
+				<string>671.000000:699.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -398,7 +398,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>357.000000:397.000000</string>
+				<string>671.000000:517.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -576,7 +576,7 @@ git update-server-info
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>357.000000:294.000000</string>
+				<string>671.000000:414.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -586,26 +586,26 @@ git update-server-info
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2008B7F0-6A05-4FEA-99A2-C8D9BCB2D90F</key>
-		<dict>
-			<key>from</key>
-			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
-			<key>to</key>
-			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
-		</dict>
-		<key>62BCD19E-115D-45B3-B6B7-4AEBCB95075D</key>
-		<dict>
-			<key>from</key>
-			<string>453709FA-80CE-4B43-BB14-F4CAAE9CBC60 - 453709FA-80CE-4B43-BB14-F4CAAE9CBC60</string>
-			<key>to</key>
-			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
-		</dict>
-		<key>A85B151A-73ED-461B-A03E-60585C220C45</key>
+		<key>1B6F8145-F016-4B95-BC72-2D20E7946317</key>
 		<dict>
 			<key>from</key>
 			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
 			<key>to</key>
 			<string>B84BCBB0-3005-414C-9F2C-014242D3E98C - B84BCBB0-3005-414C-9F2C-014242D3E98C</string>
+		</dict>
+		<key>30C46423-6955-4DDA-99FA-2454A06030EA</key>
+		<dict>
+			<key>from</key>
+			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
+			<key>to</key>
+			<string>2C5392AB-F6A6-48FC-B355-199FA17E8C81 - 2C5392AB-F6A6-48FC-B355-199FA17E8C81</string>
+		</dict>
+		<key>91FEFA6B-D213-4403-BB5C-0A5EEBBA5F4F</key>
+		<dict>
+			<key>from</key>
+			<string>453709FA-80CE-4B43-BB14-F4CAAE9CBC60 - 453709FA-80CE-4B43-BB14-F4CAAE9CBC60</string>
+			<key>to</key>
+			<string>F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D - F67CCE99-8C3B-4FB4-A1D7-95C5B9BD1C7D</string>
 		</dict>
 	</dict>
 	<key>variables</key>
